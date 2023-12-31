@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>number guessing game</title>
+    <link rel="stylesheet" href="/all.min.css" />
+    <link rel="stylesheet" href="/Css/style.css" />
+  </head>
+  <body>
+    <div class="bg-img">
+      <!-- <img src="/pngwing.com (7).png" alt="" /> -->
+    </div>
+    <div class="box">
+      <div class="player-1">
+        <i class="fa-solid fa-user"></i>
+        <h1 class="player-name">Player 1</h1>
+        <h2 class="message">Number Guessing Game</h2>
+
+        <input
+          type="password"
+          placeholder="type number ..."
+          class="inputNumber"
+        />
+        <button class="start-btn">
+          <i class="fa-solid fa-play"></i>
+          Start
+        </button>
+      </div>
+
+      <div class="player-2">
+        <div class="title">
+          <i class="fa-solid fa-user" id="userIcon"></i>
+          <h1 class="playerTwoName">Player 2</h1>
+        </div>
+
+        <h2 class="message-two">Number Guessing Game</h2>
+
+        <h2 class="playerTwoMsg"></h2>
+        <div class="input-sec">
+          <input
+            type="password"
+            placeholder="type number ..."
+            class="inputNumber2"
+          />
+          <button class="guessBtn">Guess</button>
+        </div>
+
+        <button class="tryagainBtn">Try again</button>
+        <button class="playGain">Play again</button>
+      </div>
+
+      <div class="winner">
+        <img src="/winner.png" alt="" class="winnerImg" />
+      </div>
+    </div>
+
+    <script src="/Js/main.js"></script>
+  </body>
+</html>

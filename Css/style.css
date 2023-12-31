@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --HindSiliguri: "Hind Siliguri", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #38419d,
+    #363382,
+    #312669,
+    #2a1951,
+    #200e3a
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: var(--HindSiliguri);
+}
+
+h1,
+h2,
+p,
+button,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.tryagainBtn {
+  display: none;
+}
+
+.bg-img img {
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+
+.player-1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: linear-gradient(
+    to right,
+    #38419d,
+    #006abe,
+    #0090cf,
+    #00b2d5,
+    #52d3d8
+  );
+  height: 312px;
+  width: 403px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.player-2 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: linear-gradient(
+    to right top,
+    #11235a,
+    #243570,
+    #364787,
+    #475b9f,
+    #596fb7
+  );
+  text-align: center;
+  height: 312px;
+  width: 403px;
+  padding: 30px 0;
+  display: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.player-name {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.message {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.playerTwoMsg {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.message {
+  color: #ff9800;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+input {
+  text-align: center;
+  height: 40px;
+  width: 150px;
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input::placeholder {
+  color: #ff9800;
+}
+
+.fa-user-large {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.player-2 .fa-user-large {
+  display: block;
+}
+.start-btn {
+  height: 30px;
+  width: 150px;
+  background: linear-gradient(
+    to right,
+    #ee7214,
+    #d23c3e,
+    #9f1850,
+    #5f124f,
+    #200e3a
+  );
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+.start-btn i {
+  margin-right: 8px;
+}
+
+.start-btn:hover {
+  background: linear-gradient(
+    to right,
+    #161a30,
+    #4d2955,
+    #942d5f,
+    #d03f4a,
+    #ee7214
+  );
+}
+
+.input-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-btn:hover i {
+  color: #ff9800;
+}
+
+.playerTwoName {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.playerTwoMsg {
+  padding: 10px;
+  color: #fff;
+}
+
+.playerTwoName i {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.playGain {
+  display: none;
+  position: absolute;
+  top: 107%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background-color: #006abe;
+  color: #fff;
+  border: 0;
+  height: 30px;
+  width: 500px;
+}
+
+.playGain:hover {
+  background-color: #128df1;
+  cursor: pointer;
+}
+
+.winnerImg {
+  transform: translate(50%, 50%);
+  position: absolute;
+  left: 0;
+  top: -57px;
+  display: none;
+  width: 400px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  -webkit-transform: translate(50%, 50%);
+  -moz-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  -o-transform: translate(50%, 50%);
+  -webkit-animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  10% {
+    transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-8deg);
+  }
+
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+.tryagainBtn {
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  height: 30px;
+  width: 120px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.tryagainBtn:hover {
+  background-color: #006abe;
+}
+
+.player-2 .message {
+  margin-bottom: 0;
+}
+
+.guessBtn {
+  background-color: #7d0a0a;
+  color: #fff;
+  border: 0;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+
+.guessBtn:hover {
+  background-color: #bf3131;
+}
+
+.fa-user {
+  color: #fff;
+  font-size: 25px;
+}
+
+.message-two {
+  text-transform: uppercase;
+  color: #ff9800;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
