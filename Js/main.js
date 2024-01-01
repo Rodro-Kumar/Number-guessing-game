@@ -20,10 +20,16 @@ const messagetwo = document.querySelector(".message-two");
 
 const winner = document.querySelector(".winnerImg");
 
+const message2 = document.querySelector(".message2");
+
 let playerValue = 0;
 let chance = 3;
 
 startBtn.addEventListener("click", function () {
+  if (isNaN(inputNumber.value)) {
+    message2.innerHTML = `"String Not Allow"`;
+    message2.style.display = "block";
+  }
   if (
     inputNumber.value != "" &&
     inputNumber.value >= 0 &&
@@ -57,6 +63,7 @@ guessBtn.addEventListener("click", function () {
       messagetwo.style.display = "none";
       title.style.display = "none";
       player2.style.background = "none";
+      player2.style.boxShadow = "none";
       winner.style.display = "block";
       playGain.style.display = "block";
 

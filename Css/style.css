@@ -117,6 +117,14 @@ div {
   -o-border-radius: 15px;
 }
 
+.message2 {
+  color: #e9b76d;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: none;
+}
+
 .player-name {
   color: #fff;
   text-transform: uppercase;
