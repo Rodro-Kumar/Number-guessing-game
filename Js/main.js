@@ -22,6 +22,10 @@ const winner = document.querySelector(".winnerImg");
 
 const message2 = document.querySelector(".message2");
 
+const customloader = document.querySelector(".custom-loader");
+
+const customloader2 = document.querySelector(".custom-loader2");
+
 let playerValue = 0;
 let chance = 3;
 
@@ -47,6 +51,9 @@ startBtn.addEventListener("click", function () {
 });
 
 guessBtn.addEventListener("click", function () {
+  if (isNaN(inputNumber2.value)) {
+    playerTwoMsg.innerHTML = `"String Not Allow"`;
+  }
   if (
     inputNumber2.value != "" &&
     inputNumber2.value >= 0 &&
@@ -66,11 +73,23 @@ guessBtn.addEventListener("click", function () {
       player2.style.boxShadow = "none";
       winner.style.display = "block";
       playGain.style.display = "block";
+      // customloader2.style.display = "block";
 
-      playGain.addEventListener("click", function () {
-        location.reload();
-      });
+      // setInterval(() => {
+
+      //   customloader2.style.display = "none";
+      // }, 2000);
     }
+    playGain.addEventListener("click", function () {
+      winner.style.display = "none";
+      playGain.style.display = "none";
+      customloader.style.display = "block";
+      setInterval(() => {
+        location.reload();
+        player1.style.animation = "block";
+        customloader.style.display = "none";
+      }, 2000);
+    });
 
     if (chance === 0) {
       playerTwoMsg.innerHTML = "You lose";
